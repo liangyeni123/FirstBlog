@@ -1,0 +1,141 @@
+[ 2015-06-01T14:41:54+08:00 ] 0.0.0.0 /hello/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/hello/Index/Modules/Index/TagLib/TagLibYeni.class.php on line 15 and defined /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] mysql_connect(): Connection refused /Library/WebServer/Documents/hello/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+ERR: Connection refused
+
+[ 2015-06-01T14:42:13+08:00 ] 0.0.0.0 /hello/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/hello/Index/Modules/Index/TagLib/TagLibYeni.class.php on line 15 and defined /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `hd_cate` [ RunTime:0.010891s ]
+SQL: SELECT * FROM `hd_cate` ORDER BY sort ASC  [ RunTime:0.001512s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.061686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061796s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.006885s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005561s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000779s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000745s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014271s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000913s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2015-06-01T17:02:49+08:00 ] 0.0.0.0 /hello/index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001142s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008849s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000484s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000575s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000304s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001950s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000529s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2015-06-01T17:02:49+08:00 ] 0.0.0.0 /hello/index.php/Admin/Login/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000879s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+
+[ 2015-06-01T17:46:22+08:00 ] 0.0.0.0 /hello/index.php/Admin/Login/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000966s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `hd_users` [ RunTime:0.003571s ]
+SQL: SELECT * FROM `hd_users` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.004387s ]
+SQL: UPDATE `hd_users` SET `logintime`=1433151982,`loginip`='0.0.0.0' WHERE ( `id` = 1 ) [ RunTime:0.007057s ]
+
+[ 2015-06-01T17:46:22+08:00 ] 0.0.0.0 /hello/index.php/Admin/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000439s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006381s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000328s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000198s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000124s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000314s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2015-06-01T17:46:24+08:00 ] 0.0.0.0 /hello/index.php/Admin/Blog/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000654s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `hd_blog` [ RunTime:0.002305s ]
+NOTIC: [8] Undefined variable: field /Library/WebServer/Documents/hello/Index/Lib/Model/BlogRelationModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: field /Library/WebServer/Documents/hello/Index/Lib/Model/BlogRelationModel.class.php 第 25 行.
+NOTIC: [2] array_diff(): Argument #2 is not an array /Library/WebServer/Documents/hello/ThinkPHP/Lib/Core/Model.class.php 第 1432 行.
+SQL: SELECT * FROM `hd_blog` WHERE ( `del` = 0 )  [ RunTime:0.002564s ]
+SQL: SHOW COLUMNS FROM `hd_attr` [ RunTime:0.002067s ]
+NOTIC: [8] Undefined index: mapping_order /Library/WebServer/Documents/hello/ThinkPHP/Extend/Model/RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit /Library/WebServer/Documents/hello/ThinkPHP/Extend/Model/RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM hd_blog_attr AS a, hd_attr AS b WHERE a.aid = b.id AND a. bid='7' [ RunTime:0.003610s ]
+SQL: SHOW COLUMNS FROM `hd_cate` [ RunTime:0.001179s ]
+SQL: SELECT `name` FROM `hd_cate` WHERE ( 1=1 AND id='11' ) LIMIT 1   [ RunTime:0.000965s ]
+NOTIC: [8] Undefined index: mapping_order /Library/WebServer/Documents/hello/ThinkPHP/Extend/Model/RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit /Library/WebServer/Documents/hello/ThinkPHP/Extend/Model/RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM hd_blog_attr AS a, hd_attr AS b WHERE a.aid = b.id AND a. bid='24' [ RunTime:0.000235s ]
+SQL: SELECT `name` FROM `hd_cate` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: mapping_order /Library/WebServer/Documents/hello/ThinkPHP/Extend/Model/RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit /Library/WebServer/Documents/hello/ThinkPHP/Extend/Model/RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM hd_blog_attr AS a, hd_attr AS b WHERE a.aid = b.id AND a. bid='26' [ RunTime:0.000195s ]
+SQL: SELECT `name` FROM `hd_cate` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: mapping_order /Library/WebServer/Documents/hello/ThinkPHP/Extend/Model/RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit /Library/WebServer/Documents/hello/ThinkPHP/Extend/Model/RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM hd_blog_attr AS a, hd_attr AS b WHERE a.aid = b.id AND a. bid='27' [ RunTime:0.000225s ]
+SQL: SELECT `name` FROM `hd_cate` WHERE ( 1=1 AND id='15' ) LIMIT 1   [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: mapping_order /Library/WebServer/Documents/hello/ThinkPHP/Extend/Model/RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit /Library/WebServer/Documents/hello/ThinkPHP/Extend/Model/RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM hd_blog_attr AS a, hd_attr AS b WHERE a.aid = b.id AND a. bid='30' [ RunTime:0.000213s ]
+SQL: SELECT `name` FROM `hd_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000238s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018874s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000246s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000195s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000123s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000990s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000478s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000542s ]
+

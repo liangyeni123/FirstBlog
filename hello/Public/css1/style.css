@@ -1,0 +1,111 @@
+@font-face {
+	font-family: 'DINPro-Regular';
+	src: url('font/DINPro-Regular.eot?') format('eot'), 
+	     url('font/DINPro-Regular.otf')  format('opentype'),
+	     url('font/DINPro-Regular.woff') format('woff'), 
+	     url('font/DINPro-Regular.ttf')  format('truetype'),
+	     url('font/DINPro-Regular.svg#DINPro-Regular') format('svg');
+}
+
+@font-face {
+	font-family: 'DINPro-Bold';
+	src: url('font/DINPro-Bold.eot?') format('eot'), 
+	     url('font/DINPro-Bold.otf')  format('opentype'),
+	     url('font/DINPro-Bold.woff') format('woff'), 
+	     url('font/DINPro-Bold.ttf')  format('truetype'),
+	     url('font/DINPro-Bold.svg#DINPro-Bold') format('svg');
+}
+
+body{
+font-family: 'DINPro-Regular';
+}
+
+			html {overflow:hidden;}		
+			
+			a,a:hover{
+				color: #fff;
+			}
+			
+			a{
+				text-decoration: none;
+			}
+			
+			#logo {
+				height:220px;
+			    left:50%;
+				margin:-100px 0 0 -220px;
+				position:absolute;
+				top:44%;
+				width:440px;
+				z-index:900;
+				text-align: center;
+			}
+			
+
+				
+			#contact {
+				height:14px;
+				left:1%;
+				position:absolute;
+				top:3%;
+				width:550px;
+				color: #fff;
+				z-index:900;
+				letter-spacing:1px;
+			}
+			
+				
+			#copyright {
+				height:14px;
+				right:1%;
+				position:absolute;
+				bottom:3%;
+				text-align: right;
+				width:500px;
+				color: #fff;
+				z-index:900;
+				
+				font-weight: normal;
+				font-size: 14px;
+			}
+				
+			#preloader {
+    			position:absolute;
+    			top:0;
+    			left:0;
+    			right:0;
+    			bottom:0;
+    			background-color:#fff;
+    			z-index:999;}
+
+			#status {
+    			width:200px;
+    			height:200px;
+    			position:absolute;
+    			left:50%;
+    			top:50%;
+    			background-image:url(../images/preload.gif);
+    			background-repeat:no-repeat;
+    			background-position:center;
+   				margin:-100px 0 0 -100px;}
+				
+				
+			.contactType{
+				width:50px;
+				float: left;
+				text-align: right;
+			}
+			
+			.contactContent{
+				width:500px;
+				float: left;
+				
+			}
+			
+			#comingSoon{
+				font-size: 32px;
+				color: #fff;
+				font-style: italic;
+				margin: 135px 0 0 0;
+				
+			}

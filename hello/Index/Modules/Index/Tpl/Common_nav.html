@@ -1,0 +1,27 @@
+
+    <!-- Begin Menu -->
+    <div id="menu" class="menu-v">
+      <ul>
+        <li><a href="__GROUP__" class="active">首页</a>
+        </li>
+        
+            
+            <nav order='sort ASC'>
+            <li class ='nav-lv1-li'>
+               <a href="{$url}" class='top-cate'>{$name}</a>
+        	<ul>
+                <foreach name='child' item='v'>
+        		<li><a href="{:U('/c_'. $v['id'])}">{$v.name}</a></li>
+            </foreach>
+        	</ul>
+        </li>
+    </nav>
+
+    <li><a href="__GROUP__/send" class="active">投稿</a>
+        </li>
+
+        <li><a href="__GROUP__/contact" class="active">联系</a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Menu -->

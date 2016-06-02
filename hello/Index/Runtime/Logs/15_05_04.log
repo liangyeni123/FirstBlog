@@ -1,0 +1,165 @@
+[ 2015-05-04T16:31:34+08:00 ] 0.0.0.0 /hello/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004696s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/hello/Index/Modules/Index/TagLib/TagLibYeni.class.php on line 15 and defined /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `hd_cate` [ RunTime:0.021945s ]
+SQL: SELECT * FROM `hd_cate` ORDER BY sort ASC  [ RunTime:0.015062s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.122747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122895s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.012357s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004759s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018552s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000778s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2015-05-04T16:31:37+08:00 ] 0.0.0.0 /hello/index.php/c_6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001743s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `hd_cate` [ RunTime:0.002290s ]
+SQL: SELECT * FROM `hd_cate` ORDER BY sort  [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `hd_blog` [ RunTime:0.001425s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_blog` WHERE ( `cid` IN ('9','10','11',6) ) LIMIT 1   [ RunTime:0.004312s ]
+SQL: SELECT blog.id AS id,blog.title AS title,blog.time AS time,blog.click AS click,blog.summary AS summary,cate.name AS name FROM hd_blog blog LEFT JOIN hd_cate cate ON blog.cid = cate.id WHERE ( `cid` IN ('9','10','11',6) ) LIMIT 0,6   [ RunTime:0.002321s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/hello/Index/Modules/Index/TagLib/TagLibYeni.class.php on line 15 and defined /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `hd_cate` ORDER BY sort ASC  [ RunTime:0.000321s ]
+SQL: SELECT `id`,`title`,`click` FROM `hd_blog` ORDER BY click DESC LIMIT 4   [ RunTime:0.001895s ]
+SQL: SELECT `id`,`title`,`click` FROM `hd_blog` ORDER BY time DESC LIMIT 5   [ RunTime:0.003095s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.089876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090021s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000555s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000466s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000274s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001997s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000730s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2015-05-04T16:31:40+08:00 ] 0.0.0.0 /hello/index.php/23.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001246s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001477s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `hd_blog` [ RunTime:0.005083s ]
+SQL: SELECT `title`,`time`,`content`,`cid` FROM `hd_blog` WHERE ( `id` = 23 ) LIMIT 1   [ RunTime:0.001005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/hello/Index/Modules/Index/TagLib/TagLibYeni.class.php on line 15 and defined /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `hd_cate` [ RunTime:0.001568s ]
+SQL: SELECT * FROM `hd_cate` ORDER BY sort ASC  [ RunTime:0.000346s ]
+NOTIC: [8] Undefined index: id /Library/WebServer/Documents/hello/Index/Runtime/Cache/Index/0cf5e6e53a3d17af19ad892a59c1fe31.php 第 111 行.
+NOTIC: [8] Undefined index: title /Library/WebServer/Documents/hello/Index/Runtime/Cache/Index/0cf5e6e53a3d17af19ad892a59c1fe31.php 第 111 行.
+SQL: SELECT `id`,`title`,`click` FROM `hd_blog` ORDER BY click DESC LIMIT 4   [ RunTime:0.000336s ]
+SQL: SELECT `id`,`title`,`click` FROM `hd_blog` ORDER BY time DESC LIMIT 5   [ RunTime:0.000362s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046226s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000507s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000224s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000119s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001218s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000608s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2015-05-04T16:53:48+08:00 ] 0.0.0.0 /hello/index.php/23.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003650s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005480s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `hd_blog` [ RunTime:0.012808s ]
+SQL: SELECT `title`,`time`,`content`,`cid` FROM `hd_blog` WHERE ( `id` = 23 ) LIMIT 1   [ RunTime:0.014899s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/hello/Index/Modules/Index/TagLib/TagLibYeni.class.php on line 15 and defined /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `hd_cate` [ RunTime:0.004950s ]
+SQL: SELECT * FROM `hd_cate` ORDER BY sort ASC  [ RunTime:0.001031s ]
+NOTIC: [8] Undefined index: id /Library/WebServer/Documents/hello/Index/Runtime/Cache/Index/0cf5e6e53a3d17af19ad892a59c1fe31.php 第 111 行.
+NOTIC: [8] Undefined index: title /Library/WebServer/Documents/hello/Index/Runtime/Cache/Index/0cf5e6e53a3d17af19ad892a59c1fe31.php 第 111 行.
+SQL: SELECT `id`,`title`,`click` FROM `hd_blog` ORDER BY click DESC LIMIT 4   [ RunTime:0.001699s ]
+SQL: SELECT `id`,`title`,`click` FROM `hd_blog` ORDER BY time DESC LIMIT 5   [ RunTime:0.000453s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.114120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114227s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000805s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000421s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000394s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002586s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001062s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2015-05-04T19:30:13+08:00 ] 0.0.0.0 /hello/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/hello/Index/Modules/Index/TagLib/TagLibYeni.class.php on line 15 and defined /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `hd_cate` [ RunTime:0.010004s ]
+SQL: SELECT * FROM `hd_cate` ORDER BY sort ASC  [ RunTime:0.007525s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.081484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081573s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.006820s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005551s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001059s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015047s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001408s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001544s ]
+
+[ 2015-05-04T22:04:02+08:00 ] 0.0.0.0 /hello/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004393s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/hello/Index/Modules/Index/TagLib/TagLibYeni.class.php on line 15 and defined /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/hello/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `hd_cate` [ RunTime:0.017365s ]
+SQL: SELECT * FROM `hd_cate` ORDER BY sort ASC  [ RunTime:0.009617s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.098433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098562s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.006004s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.011789s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.005953s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.010950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.034956s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000799s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000855s ]
+
